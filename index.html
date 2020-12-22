@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Responsive Animated Online Education Website Design Tutorial</title>
+    <title>ISET SFAX</title>
     <!-- icons style-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
      <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <!--icon head-->
+    <link rel="icon" href="img/iset.jfif" type="image/gif" sizes="16x16">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/3.1%20bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
+
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive CSS -->
-    <script src="js/jquery/4.1%20jquery.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
+     <!-- JQUERY JS -->
+ <script src="js/jquery/4.1%20jquery.js"></script>
+ <!-- Bootstrap JS -->
+<script src="js/bootstrap/bootstrap.js"></script>
 </head>
 <body>
 
@@ -26,13 +32,13 @@
 
 <header id="header">
 
-<a href="#home" class="logo"><img src="img/iset%20logo.jfif" alt=""> <span>IS</span><span id="ET">ET</span></a>
+<a href="#home" class="logo"><img src="img/iset logo.jfif" alt=""> <span>IS</span><span id="ET">ET</span></a>
 
 <nav>
   <ul>
-    <li><a href="#home">home</a></li>
-    <li><a href="#course">courses</a></li>
-    <li><a href="#service">services</a></li>
+    <li><a href="#home">Acceuil</a></li>
+    <li><a href="#Départements"> Départements</a></li>
+    <li><a href="#service">Formations</a></li>
     <li><a href="#testimonial">testimonials</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
@@ -52,11 +58,11 @@
 
 <div class="col-md-8 ml-md-5 text-center text-md-left">
 
-  <h2>online</h2>
-  <h1>education</h1>
-  <h3>learn online from home</h3>
+  <h2>L'Institut</h2>
+  <h1>Supérieur</h1>
+  <h3>des Etudes Technologiques de Sfax</h3>
 
-  <a href="#course"><button> enroll now >></button></a>  
+  <a href="#Départements"><button> plus d'info >></button></a>  
 
   <div class="icons">
     <a href="#" class="fa fa-facebook"></a>
@@ -74,49 +80,50 @@
 
 <!-- home section ends -->
 
-<!-- course section starts  -->
+<!-- Départements section starts  -->
 
-<section id="course">
+<section id="Départements">
 
-<h1 class="heading">our latest courses</h1>
+<h1 class="heading">Départements</h1>
 
 <div class="box-container">
 
   <div class="box" data-aos="flip-right">
-    <img src="img/inf.jpg" alt="">
+    <img src="img/icon/Icon_eco.png" alt="">
+    <h2>S.ECONOMIQUES ET DE GESTION</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
   </div>
 
   <div class="box" data-aos="flip-down">
-    <img src="img/iset.jfif" alt="">
+    <img src="img/icon/Icon_genie_civil.png" alt="">
+    <h2>GÉNIE CIVIL</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
   </div>
 
   <div class="box" data-aos="flip-left">
-    <img src="img/robot.jpg" alt="">
+    <img src="img/icon/Icon_procedure.png" alt="">
+    <h2>GÉNIE DE PROCÉDÉS</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
   </div>
 
   <div class="box" data-aos="flip-right">
-    <img src="img/page.jpg" alt="">
+    <img src="img/icon/Icon_mecanique.png" alt="">
+    <h2>GÉNIE MÉCANIQUE</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
   </div>
 
   <div class="box" data-aos="flip-up">
-    <img src="images/icon5.svg" alt="">
+    <img src="img/icon/Icon_info.png" alt="">
+    <h2>INFORMATIQUE</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
   </div>
 
-  <div class="box" data-aos="flip-right">
-    <img src="images/icon6.svg" alt="">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.</p>
-  </div>
 
 </div>
 
 </section>
 
-<!-- course section ends -->
+<!-- Départements section ends -->
 
 
 <!-- service section starts  -->
@@ -244,6 +251,10 @@
 </div>
 
 </div>
+<div id='scroll_to_top' class='opacity'>
+  <img src="img/scrolltop.png" alt="Retourner en haut">
+</div>
+
 
 </section>
 
@@ -301,15 +312,10 @@ $(document).ready(function(){
 });
 
 </script>
-<!-- Bootstrap JS -->
-<script src="js/bootstrap/bootstrap.js"></script>
+
  <!-- Custom JS -->
  <script src="js/script.js"></script>
- <!-- JQUERY JS -->
- <script src="js/jquery/4.1%20jquery.js"></script>
- <div id='scroll_to_top' class='opacity'>
-  <img src="img/scrolltop.png" alt="Retourner en haut">
-</div>
+
 
 
 </body> 

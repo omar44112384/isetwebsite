@@ -1,0 +1,157 @@
+/* home background*/
+@-webkit-keyframes background {
+    0%, 100% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/desetu.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    25% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/inf.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    50% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/page.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    75% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
+  
+  @keyframes background {
+    0%, 100% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/robot.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    25% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/page.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    50% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/inf.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    75% {
+      background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(../img/desetu.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
+  /* reponsive nav */
+  @media (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+    #header .fa-bars {
+      display: block;
+    }
+    #header nav {
+      position: fixed;
+      top: -120%;
+      left: 0;
+      height: calc(100vh - 5rem);
+      width: 100vw;
+      background: #fff;
+    }
+    #header nav ul {
+      height: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    #header nav ul li {
+      margin: 2rem 0;
+    }
+    #header nav ul li a {
+      font-size: 3rem;
+    }
+    #header .nav-toggle {
+      top: 5.6rem;
+    }
+    #home {
+      -webkit-animation: none;
+              animation: none;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../img/iset_logo_bc.jpg) no-repeat;
+      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/iset_logo_bc.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    #home .content {
+      text-shadow: .1rem .1rem .3rem #333;
+    }
+    #home .content .icons {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+  /* reponsive service */
+  @media (max-width: 500px) {
+    #service .box-container .box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      padding: 1.5rem;
+    }
+    #service .box-container .box img {
+      height: 10rem;
+      margin: 1rem;
+    }
+    #service .box-container .box .info {
+      padding-left: 0;
+      padding-top: 3rem;
+      border: none;
+      text-align: center;
+    }
+    #service .box-container .box .info p {
+      padding: 1rem;
+    }
+    #testimonial .box-container .box {
+      padding: .5rem;
+      margin-top: 13rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #testimonial .box-container .box img {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: -30%;
+      height: 15rem;
+      width: 15rem;
+    }
+    #testimonial .box-container .box .info {
+      text-align: center;
+    }
+    #testimonial .box-container .box .info p {
+      padding-top: 9rem;
+    }
+    #testimonial .box-container .box .info h2 {
+      text-align: center;
+      margin: 1.5rem;
+    }
+    #testimonial .box-container .box:nth-child(even) {
+      float: none;
+    }
+  }
