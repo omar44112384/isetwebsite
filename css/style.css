@@ -43,7 +43,17 @@ body {
 #header .logo img {
   height: 3.5rem;
 }
+#iset{
+  font-weight: bold;
+  color: #04377e;
+  font-size: 28px;
+  text-decoration: none;
+}
 
+#iset:hover{
+  color: #b8860b;
+  text-decoration: none;
+}
 #header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +78,7 @@ body {
 
 #header nav ul li a:hover {
   text-decoration: none;
-  color: #00B894;
+  color: #699de0;
 }
 
 #header .fa-bars {
@@ -85,7 +95,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  animation: background 10s alternate infinite;
+  animation:  background 10s alternate infinite;
 }
 
 #home .content {
@@ -94,12 +104,12 @@ body {
 
 #home .content h1 {
   font-size: 6rem;
-  color: #00B894;
+  color: #04377e;
 }
 
 #home .content h2 {
   font-size: 5rem;
-  color: #00B894;
+  color: #04377e;
 }
 
 #home .content h3 {
@@ -112,7 +122,7 @@ body {
   outline: none;
   border: none;
   border-radius: 65px;
-  background: #00B894;
+  background: #04377e;
   color: #fff;
   cursor: pointer;
   height: 4rem;
@@ -137,7 +147,7 @@ body {
   width: 4rem;
   line-height: 4rem;
   text-align: center;
-  background: #00B894;
+  background: #04377e;
   border-radius: 5rem;
   font-size: 1.7rem;
   color: #fff;
@@ -168,7 +178,7 @@ body {
   color: #fff;
   text-align: center;
   position: relative;
-  color: #00B894;
+  color: #04377e;
 }
 
 #Départements .heading::after {
@@ -271,16 +281,16 @@ body {
   background: #333;
 }
 /*===============END Départements===========*/
-#service {
+#formation {
   display: -ms-grid;
   display: grid;
   place-items: center;
   min-height: 100vh;
   width: 100vw;
-  background: #00B894;
+  background: #04377e;
 }
 
-#service .heading {
+#formation .heading {
   font-size: 4rem;
   padding-top: 5rem;
   margin: 2rem 0;
@@ -289,7 +299,7 @@ body {
   position: relative;
 }
 
-#service .heading::after {
+#formation .heading::after {
   content: '';
   position: absolute;
   bottom: -1.5rem;
@@ -302,11 +312,11 @@ body {
   background: #333;
 }
 
-#service .box-container {
+#formation .box-container {
   width: 90%;
 }
 
-#service .box-container .box {
+#formation .box-container .box {
   background: #fff;
   max-width: 60rem;
   border-radius: .5rem;
@@ -325,30 +335,30 @@ body {
   clear: both;
 }
 
-#service .box-container .box img {
+#formation .box-container .box img {
   height: 7rem;
   margin-right: 4rem;
 }
 
-#service .box-container .box .info {
+#formation .box-container .box .info {
   padding-left: 2.5rem;
-  border-left: 0.4rem solid #00B894;
+  border-left: 0.4rem solid #04377e;
 }
 
-#service .box-container .box .info h2 {
+#formation .box-container .box .info h2 {
   font-size: 3rem;
-  color: #00B894;
+  color: #04377e;
 }
 
-#service .box-container .box .info p {
+#formation .box-container .box .info p {
   font-size: 1.5rem;
   color: #333;
 }
 
-#service .box-container .box:nth-child(2) {
+#formation .box-container .box:nth-child(2) {
   float: right;
 }
-
+/* ===== end formations==========*/
 #testimonial {
   display: -ms-grid;
   display: grid;
@@ -381,7 +391,7 @@ body {
 }
 
 #testimonial .heading::after {
-  background: #00B894;
+  background: #04377e;
 }
 
 #testimonial .box-container {
@@ -415,9 +425,9 @@ body {
   height: 10rem;
   width: 10rem;
   border-radius: 10rem;
-  border: 0.5rem solid #00B894;
-  -webkit-box-shadow: 0 0 5rem #00B894 inset;
-          box-shadow: 0 0 5rem #00B894 inset;
+  border: 0.5rem solid #04377e;
+  -webkit-box-shadow: 0 0 5rem #04377e inset;
+          box-shadow: 0 0 5rem #04377e inset;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -425,7 +435,7 @@ body {
 #testimonial .box-container .box .info h2 {
   margin-top: -2.5rem;
   margin: 2rem;
-  color: #00B894;
+  color: #04377e;
   text-align: right;
 }
 
@@ -437,7 +447,7 @@ body {
 
 #testimonial .box-container .box .info p i {
   padding: 1rem;
-  color: #00B894;
+  color: #04377e;
 }
 
 #testimonial .box-container .box:nth-child(even) {
@@ -448,8 +458,8 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00B894), to(#00B894)), url(../images/contact-bg.jpg) no-repeat;
-  background: linear-gradient(#00B894, #00B894), url(../images/contact-bg.jpg) no-repeat;
+  background: -webkit-geadient(linear, left top, left bottom, from(#04377e), to(#04377e)), url(../images/contact-bg.jpg) no-repeat;
+  background: linear-gradient(#04377e, #04377e), url(../images/contact-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -520,7 +530,7 @@ body {
 }
 
 #contact form .inputBox input:focus, #contact form .inputBox textarea:focus {
-  border-color: #00B894;
+  border-color: #04377e;
 }
 
 #contact form .inputBox textarea {
@@ -531,7 +541,7 @@ body {
 
 #contact form .inputBox input[type="submit"] {
   border: none;
-  background: #00B894;
+  background: #04377e;
   color: #fff;
 }
 
@@ -559,7 +569,7 @@ body {
 }
 
 #footer h1 span {
-  color: #00B894;
+  color: #04377e;
 }
 
 #scroll_to_top {

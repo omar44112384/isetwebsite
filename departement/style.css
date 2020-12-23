@@ -1,0 +1,97 @@
+body{
+    margin: 10% 10%;
+    background-color: rgba(62, 62, 62, 0.17);
+}
+h1{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    color:#04377e;
+}
+h2,h3,h4{
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Exo 2', sans-serif;
+    color:#04377e;
+    text-transform: uppercase;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    
+}
+p{
+     text-align: center;
+    text-decoration: none;
+    font-family: cursive;
+    
+    color:rgb(56, 54, 54);
+
+}
+.p{
+    text-align:left;
+}
+b{
+  color: black;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+ol.c {
+    list-style-type: upper-roman;
+  }
+  .roman {
+      font-weight: bold;
+      color: #ffb21a;
+  }
+  #schéma {
+    width: 600px;
+  }
+ul.timeline li
+{
+  position: relative;
+   height: 3em;
+  color:#04377e;
+}
+
+ul.timeline li:before
+{
+    content: "";
+    display: inline-block;
+    height: 3em;
+    width: 1px;
+    background: #04377e;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -11px;
+    top: -0.4em;
+    z-index: -1;
+}
+
+ul.timeline:before
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: 0.1em;
+  color: #04377e;
+}
+
+ul.timeline:after
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: -1em;
+  color: #04377e;
+}
