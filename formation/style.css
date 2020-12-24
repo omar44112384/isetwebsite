@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    font-family: 'Exo 2', sans-serif;
+  }
+#formation {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: #04377e;
+  }
+  
+  #formation .heading {
+    font-size: 4rem;
+    padding-top: 5rem;
+    margin: 2rem 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  #formation .heading::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: .3rem;
+    width: 60%;
+    border-radius: 5rem;
+    background: #333;
+  }
+  
+  #formation .box-container {
+    width: 90%;
+  }
+  
+  #formation .box-container .box {
+    background: #fff;
+    max-width: 60rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 0 .3rem #333;
+            box-shadow: 0 0 .3rem #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 4rem 2rem;
+    margin: 2rem;
+    clear: both;
+  }
+  
+  #formation .box-container .box img {
+    height: 7rem;
+    margin-right: 4rem;
+  }
+  
+  #formation .box-container .box .info {
+    padding-left: 2.5rem;
+    border-left: 0.4rem solid #04377e;
+  }
+  
+  #formation .box-container .box .info h2 {
+    font-size: 3rem;
+    color: #04377e;
+  }
+  
+  #formation .box-container .box .info p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  #formation .box-container .box:nth-child(2) {
+    float: right;
+  }
+  /* ===== end formations==========*/
+  /*======= Button Downlod===*/
+
+  body {
+	background-color: #1a1a1a;
+}
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #04377e;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #04377e;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #04377e;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* reponsive formation */
+ @media (max-width: 500px) {
+    #formation .box-container .box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      padding: 1.5rem;
+    }
+    #formation .box-container .box img {
+      height: 10rem;
+      margin: 1rem;
+    }
+    #formation .box-container .box .info {
+      padding-left: 0;
+      padding-top: 3rem;
+      border: none;
+      text-align: center;
+    }
+    #formation .box-container .box .info p {
+      padding: 1rem;
+    }
+}
